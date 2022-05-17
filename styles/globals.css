@@ -1,16 +1,13 @@
-html,
-body {
+:root{
+  --default-skin: #fca;
+  --default-eye-color: rgb(89, 180, 130);
+  --default-hair: rgba(0, 0, 0, 0.616);
+}
+
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
 }
+
+
