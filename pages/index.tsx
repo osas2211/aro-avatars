@@ -5,16 +5,20 @@ import Image from 'next/image'
 import styles from '../styles/canvas.module.css'
 import { useSelector } from 'react-redux'
 import { RootState } from '../redux/store'
+import { Avatar } from '../components/Avatar'
 import { Body } from '../components/Body'
+import { Legs } from '../components/Leg'
 
 const Home: NextPage = () => {
   const state = useSelector((state:RootState) => state.demo)
   return (
     <div className={styles.canvas}>
-        <Body>
+        <Avatar>
           <Head />
           <Neck />
-        </Body>
+          <Body />
+          <Legs />
+        </Avatar>
     </div>
   )
 }
