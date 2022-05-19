@@ -11,9 +11,9 @@
 
 .shoulder{
     height: 25%;
-    width: 38%;
+    width: 39%;
     top: 3%;
-    left: -35%;
+    left: -36%;
     background-color: var(--default-shirt);
     border-top-left-radius: 120%;
     z-index: 2;
@@ -21,7 +21,7 @@
 
 .shoulder + .shoulder{
     left: auto;
-    right: -36%;
+    right: -37%;
     border-top-left-radius: 0%;
     border-top-right-radius: 120%;
 }
@@ -33,13 +33,13 @@
     left: -38%;
     background-color: var(--default-skin);
     border-radius: 100% / 30% 30% 40% 60%;
-    transform: rotate(10deg);
+    transform: rotate(12deg);
 }
 
 .muscle + .muscle{
     left: auto;
     right: -38%;
-    transform: rotate(-10deg);
+    transform: rotate(-12deg);
 }
 
 .arm {
@@ -68,7 +68,7 @@
     left: -30%;
     background-color: var(--default-skin);
     z-index: 2;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
     border-radius:100% / 0% 0% 60% 60% ;
 }
 
@@ -79,7 +79,7 @@
     width: 50%;
     top: 15%;
     left: 90%;
-    background-color: var(--default-skin);
+    background-color: inherit;
     transform: rotate(-10deg);
     border-radius: 60%;
 }
@@ -87,7 +87,7 @@
 .fingers + .fingers{
     left: auto;
     right: -30%;
-    transform: rotate(10deg);
+    transform: rotate(8deg);
 }
 
 .fingers + .fingers::after{

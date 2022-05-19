@@ -5,16 +5,27 @@ import { Eye } from './Eye'
 import { Hair } from './Hair'
 import { Mouth } from './Mouth'
 import { Nose } from './Nose'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../redux/store'
 
 export const Head = () => {
+  const headState = useSelector((state: RootState) => state.head)
+  const bodyState = useSelector((state: RootState) => state.body)
   return (
-    <div className={`${styles.head} ${styles.hair}`}>
+    <div className={`${styles.head} ${styles.hair}`}
+      style={{ 
+        borderRadius: headState.headShape,
+        height: headState.headSize.height,
+        width: headState.headSize.width,
+        backgroundColor: bodyState.skinColor
+      }}
+    >
         <Ear />
         <Ear />
-        <Eye />
-        <Eye />
+        <Eye color={headState.eyeColor} shape = {headState.eyeShape} shadowColor = {bodyState.skinColor}/>
+        <Eye color={headState.eyeColor} shape = {headState.eyeShape} shadowColor = {bodyState.skinColor}/>
         <Nose />
-        <Mouth />
+        <Mouth smile={headState.smile}/>
     </div>
   )
 }

@@ -4,7 +4,7 @@
     width: 22%;
     top: 38%;
     left: 15%;
-    border-radius: 100% / 80% 80% 120% 120%;
+    /* border-radius: 100% / 80% 80% 120% 120%; */
     border-top: .3vmin solid rgba(0, 0, 0, 0.836);
     overflow: hidden;
     box-shadow: 0 -0vmin,
@@ -12,20 +12,19 @@
     0 -1.8vmin var(--default-hair);
 }
 
-.eye::after, .eye::before{
-    content: "";
+.iris, .pupil{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 1vmin;
     width: 1vmin;
-    background-color: var(--default-eye-color);
+    /* background-color: var(--default-eye-color); */
     border-radius: 100%;
     z-index: 1;
 }
 
-.eye::before{
+.pupil{
     height: .5vmin;
     width: .5vmin;
     background-color: #000;
