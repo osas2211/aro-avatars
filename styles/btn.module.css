@@ -4,9 +4,11 @@
 /* CSS */
 
 .download_share{
-    position: absolute;
-    top: 10%;
-    right: 3%;
+    position: relative;
+    order: 2;
+    margin: 2rem;
+    /* top: 10%;
+    right: 3%; */
 }
 
 .download_share h3{

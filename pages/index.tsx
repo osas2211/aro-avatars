@@ -14,6 +14,8 @@ import { Hat } from '../components/Hat'
 import { DownloadAndShare } from '../components/downloadAndShare'
 
 const Home: NextPage = () => {
+  // Tweaking of State is via css values
+  
   const state = useSelector((state:RootState) => state.demo)
   return (
     <>
@@ -23,17 +25,19 @@ const Home: NextPage = () => {
       <header>
         <h2>Aro <span style={{color: "#FCDC4D"}}>Avatars</span></h2>
       </header>
-      <div className={styles.canvas}>
-          <Avatar>
-            <Hat />
-            <AvatarHead />
-            <Neck />
-            <Body />
-            <Legs />
-          </Avatar>
+      <div className='playground'>
+        <div className={styles.canvas} id={"canvas"}>
+            <Avatar>
+              <Hat />
+              <AvatarHead />
+              <Neck />
+              <Body />
+              <Legs />
+            </Avatar>
+        </div>
+        <Options />
+        <DownloadAndShare />
       </div>
-      <Options />
-      <DownloadAndShare />
     </>
   )
 }

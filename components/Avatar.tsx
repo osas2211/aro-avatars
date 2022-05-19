@@ -6,7 +6,7 @@ import { RootState } from '../redux/store'
 export const Avatar: React.FC<{ children:ReactNode }> = ({ children }) => {
   const bodyState = useSelector((state: RootState) => state.body)
   return (
-    <div className={styles.avatar} style={{width: bodyState.bodySize}}>
+    <div className={styles.avatar + " avatar"} style={{width: bodyState.bodySize}}>
         { children }
     </div>
   )

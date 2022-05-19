@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "../../styles/head_styles/head.module.css"
 import { Ear } from './Ear'
 import { Eye } from './Eye'
-import { Hair } from './Hair'
 import { Mouth } from './Mouth'
 import { Nose } from './Nose'
 import { useSelector } from 'react-redux'

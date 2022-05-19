@@ -24,4 +24,12 @@ header{
   padding: 1rem 2rem;
 }
 
+.playground{
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 
