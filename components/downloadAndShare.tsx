@@ -23,9 +23,9 @@ export const DownloadAndShare = () => {
     }
   return (
     <div className={styles.download_share}>
-        <h3>Download and Share</h3>
+        <h3>Download</h3>
         <div><button className={styles.button} ref={downloadBtn} onClick={onDownload}>Download Avatar</button></div>
-        <div><button className={styles.button} disabled>Share(disabled)</button></div>
+        {/* <div><button className={styles.button} disabled>Share(disabled)</button></div> */}
     </div>
   )
 }
